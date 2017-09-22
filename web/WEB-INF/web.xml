@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>registerCustomer</servlet-name>
+        <servlet-class>Servlet.registerCustomer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modifyCustomer</servlet-name>
+        <servlet-class>Servlet.modifyCustomer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>xmlTest</servlet-name>
+        <servlet-class>Servlet.xmlTest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>registerCustomer</servlet-name>
+        <url-pattern>/registerCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modifyCustomer</servlet-name>
+        <url-pattern>/modifyCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>xmlTest</servlet-name>
+        <url-pattern>/xmlTest</url-pattern>
+    </servlet-mapping>
+</web-app>
